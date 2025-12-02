@@ -8,7 +8,14 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // Replace with real industrial images
-import sample from "../assets/hero/main.jpg";
+import sample from "../assets/hero/residentialelv.jpeg";
+import commercial from "../assets/hero/commercial.jpg";
+import hospital from "../assets/hero/hospitalelev.jpeg";
+import fright from "../assets/hero/friegtelev.jpeg";
+import villa from "../assets/hero/villaelev.jpeg";
+import service from "../assets/hero/liftservice.jpeg";
+import escal from "../assets/hero/main4.jpg"
+import modern from "../assets/hero/in6.jpeg"
 
 const services = [
   {
@@ -23,53 +30,49 @@ const services = [
     slug: "commercial-elevators",
     description:
       "High-performance lifts built for malls, offices, and skyscrapers. Designed for maximum efficiency and durability with sleek looks and smart controls.",    
-    image: sample,
+    image: commercial,
   },
   {
     title: "Hospital Elevators",
     slug: "hospital-elevators",
     description:
       "Spacious lifts designed for patient care and emergencies. They offer reliable and safe transport for patients, stretchers, and medical staff across hospital floors.", 
-    image: sample,
+    image: hospital,
   },
   {
     title: "Freight Elevators",
     slug: "freight-elevators",
     description:
       "Heavy-duty elevators built for warehouses and factories. Strong, efficient, and safe — ideal for large loads and demanding environments.",
-    image: sample,
+    image: fright,
   },
   {
     title: "Private Villas Elevator",
     slug: "private-villa-elevator",
     description:
       "Tailored luxury elevator solutions designed specifically for private villas, ensuring comfort, elegance, and seamless vertical mobility.",
-    image: sample,
+    image: villa,
   },
   {
     title: "Maintenance & AMC",
     slug: "maintenance-amc",
     description:
       "We provide full maintenance support and AMC plans to keep your elevators running smoothly, safely, and reliably 24/7.", 
-    image: sample,
+    image: service,
   },
-
-  // ⭐ New Service 7
   {
     title: "Escalators & Moving Walkways",
     slug: "escalators-walkways",
     description:
       "High-efficiency escalators and walkways designed for malls, airports, and commercial hubs. Engineered for heavy traffic, smooth movement, and long-term reliability.",
-    image: sample,
+    image: escal,
   },
-
-  // ⭐ New Service 8
   {
     title: "Modernization & Upgradation",
     slug: "modernization-upgradation",
     description:
       "Upgrade old elevators with modern controls, energy-efficient systems, new interiors, and advanced safety tech. Improve performance, comfort, and compliance standards.",
-    image: sample,
+    image: modern,
   },
 ];
 
@@ -135,7 +138,7 @@ export default function MeTechServicesSection() {
                     <h3 className="text-2xl md:text-3xl font-medium text-white drop-shadow">
                       {service.title}
                     </h3>
-                    <p className="text-sm text-black mt-2 leading-relaxed">
+                    <p className="text-sm text-white mt-2 leading-relaxed">
                       Built with precision engineering & advanced manufacturing.
                     </p>
                   </div>

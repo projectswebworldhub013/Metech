@@ -1,6 +1,6 @@
 // src/components/DesignHero.jsx
 import React from "react";
-import img from "../assets/hero/ahero.jpg"; // replace with MeTech hero image
+import img from "../assets/hero/main7.avif"; // replace with MeTech hero image
 
 const colors = {
   primary: "#1C75BC", // MeTech Blue

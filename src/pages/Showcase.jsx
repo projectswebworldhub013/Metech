@@ -4,7 +4,23 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FaTimes, FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import GalleryHero from "../components/GalleryHero";
 
-import img1 from "../assets/hero/main.jpg";
+// Replace with real industrial images
+import img1 from "../assets/hero/residentialelv.jpeg";
+import img2 from "../assets/hero/commercial.jpg";
+import img3 from "../assets/hero/hospitalelev.jpeg";
+import img4 from "../assets/hero/friegtelev.jpeg";
+import img5 from "../assets/hero/villaelev.jpeg";
+import img6 from "../assets/hero/liftservice.jpeg";
+import img7 from "../assets/hero/main4.jpg"
+import img8 from "../assets/hero/in6.jpeg"
+import  img9 from "../assets/hero/in1.jpeg"
+import  img10 from "../assets/hero/in2.jpeg"
+import  img11 from "../assets/hero/in3.jpeg"
+import  img12 from "../assets/hero/in4.jpeg"
+import  img13 from "../assets/hero/in5.jpeg"
+import  img14 from "../assets/hero/in6.jpeg"
+import  img15 from "../assets/hero/in7.jpeg"
+import  img16 from "../assets/hero/in8.jpeg"
 
 const colors = {
   primaryBlue: "#004AAD",
@@ -14,11 +30,10 @@ const colors = {
   white: "#FFFFFF",
   black: "#0A0A0A",
 };
-
 const images = [
-  img1, img1, img1, img1, img1, img1, img1,
-  img1, img1, img1, img1, img1, img1, img1,
-  img1, img1, img1,
+  img1, img2, img3, img4, img5, img6, img7,
+  img14, img13, img12, img11, img10, img9, img8,
+  img15, img16,
 ];
 
 const Gallery = () => {

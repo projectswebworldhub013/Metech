@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import bg from "../assets/hero/main.jpg"; // MeTech Background Image
+import bg from "../assets/hero/1.jpg"; // MeTech Background Image
 
 // MeTech Colors
 const colors = {

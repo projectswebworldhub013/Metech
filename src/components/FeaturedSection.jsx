@@ -2,7 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaCheckCircle } from "react-icons/fa";
-import leftImg from "../assets/hero/main3.jpg";
+import leftImg from "../assets/hero/main7.jpg";
 
 const colors = {
   black: "#0A1626",
@@ -68,52 +68,85 @@ export default function FeaturedSection() {
             Get a Quick Quote
           </h3>
 
-          <form className="space-y-4">
+          <form
+  className="space-y-4"
+  action="https://formsubmit.co/metechsystemsindia@gmail.com"
+  method="POST"
+>
 
-            <input
-              type="text"
-              placeholder="Full Name"
-              className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:border-[#2196F3] focus:ring-1 focus:ring-[#2196F3] outline-none"
-            />
+  {/* Name */}
+  <input
+    type="text"
+    name="name"
+    placeholder="Full Name"
+    required
+    className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:border-[#2196F3] focus:ring-1 focus:ring-[#2196F3] outline-none"
+  />
 
-            <input
-              type="email"
-              placeholder="Email Address"
-              className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:border-[#2196F3] focus:ring-1 focus:ring-[#2196F3] outline-none"
-            />
+  {/* Email */}
+  <input
+    type="email"
+    name="email"
+    placeholder="Email Address"
+    required
+    className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:border-[#2196F3] focus:ring-1 focus:ring-[#2196F3] outline-none"
+  />
 
-            <input
-              type="tel"
-              placeholder="Mobile Number"
-              className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:border-[#2196F3] focus:ring-1 focus:ring-[#2196F3] outline-none"
-            />
+  {/* Phone */}
+  <input
+    type="tel"
+    name="phone"
+    placeholder="Mobile Number"
+    required
+    className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:border-[#2196F3] focus:ring-1 focus:ring-[#2196F3] outline-none"
+  />
 
-            <select
-              className="w-full px-4 py-2 rounded-lg border border-gray-300 text-gray-600 focus:border-[#2196F3] focus:ring-1 focus:ring-[#2196F3] outline-none"
-            >
-              <option>Select Service</option>
-              <option>Residential Elevator</option>
-              <option>Commercial Elevator</option>
-              <option>Hospital Elevator</option>
-              <option>Freight Elevator</option>
-              <option>Escalator Parts</option>
-              <option>Modernization & Upgrades</option>
-            </select>
+  {/* Service */}
+  <select
+    name="service"
+    required
+    className="w-full px-4 py-2 rounded-lg border border-gray-300 text-gray-600 focus:border-[#2196F3] focus:ring-1 focus:ring-[#2196F3] outline-none"
+  >
+    <option value="">Select Service</option>
+    <option>Residential Elevator</option>
+    <option>Commercial Elevator</option>
+    <option>Hospital Elevator</option>
+    <option>Freight Elevator</option>
+    <option>Escalator Parts</option>
+    <option>Modernization & Upgrades</option>
+  </select>
 
-            <textarea
-              placeholder="Message"
-              rows="3"
-              className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:border-[#2196F3] focus:ring-1 focus:ring-[#2196F3] outline-none"
-            ></textarea>
+  {/* Message */}
+  <textarea
+    name="message"
+    rows="3"
+    required
+    placeholder="Message"
+    className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:border-[#2196F3] focus:ring-1 focus:ring-[#2196F3] outline-none"
+  ></textarea>
 
-            <button
-              type="submit"
-              className="w-full py-2 rounded-full bg-[#2196F3] text-white font-light hover:opacity-90 transition-all"
-            >
-              Submit Request
-            </button>
+  {/* Hidden Controls for FormSubmit */}
+  <input type="hidden" name="_captcha" value="false" />
+  <input type="hidden" name="_template" value="table" />
+  <input type="hidden" name="_subject" value="New Service Inquiry - MeTech System India" />
 
-          </form>
+  {/* Redirect after submission */}
+  <input
+    type="hidden"
+    name="_next"
+    value="https://metechsystemindia.in/"
+  />
+
+  {/* Submit Button */}
+  <button
+    type="submit"
+    className="w-full py-2 rounded-full bg-[#2196F3] text-white font-light hover:opacity-90 transition-all"
+  >
+    Submit Request
+  </button>
+
+</form>
+
 
         </div>
       </div>

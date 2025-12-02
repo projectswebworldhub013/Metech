@@ -12,6 +12,7 @@ import {
 import { Link } from "react-router-dom";
 import ContactHero from "../components/ContactHero";
 import bg from "../assets/hero/1.jpg";
+import MapSection from "../components/MapSection";
 
 const colors = {
   primaryBlue: "#1C75BC",
@@ -242,6 +243,7 @@ const Contact = () => {
           </form>
         </div>
       </section>
+      <MapSection/>
     </>
   );
 };

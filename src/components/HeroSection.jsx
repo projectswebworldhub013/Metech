@@ -3,8 +3,8 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube, FaXTwitter } from "react-icons/fa6";
 
-import img1 from "../assets/hero/hero1.avif";
-import img2 from "../assets/hero/main.jpg";
+import img1 from "../assets/hero/main4.jpg";
+import img2 from "../assets/hero/main5.jpg";
 import img3 from "../assets/hero/main3.jpg";
 
 const slides = [

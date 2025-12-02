@@ -1,89 +1,100 @@
 // src/components/PremiumMarquee.jsx
 import React from "react";
 import {
-  FaCouch,
-  FaDraftingCompass,
-  FaPalette,
-  FaPaintBrush,
-  FaLeaf,
-  FaRulerCombined,
   FaTools,
-  FaHardHat,
+  FaCogs,
+  FaIndustry,
+  FaTruckLoading,
+  FaClinicMedical,
   FaBuilding,
-  FaHammer,
-  FaCity,
-  FaPencilRuler,
-  FaLayerGroup,
-  FaCubes,
-  FaDoorOpen,
-  FaBath,
   FaHome,
-  FaMountain,
-  FaWarehouse,
+  FaArrowUp,
+  FaExchangeAlt,
+  FaWalking,
+  FaFan,
+  FaMicrochip,
+  FaBox,
+  FaPlug,
+  FaThLarge,
+  FaSitemap,
+  FaLock,
+  FaPuzzlePiece,
+  FaCodeBranch,
+  FaStream,
+  FaWaveSquare,
 } from "react-icons/fa";
 
-// Interior (10) + Construction (10)
+// ✔ All MeTech System India Services + Products
 const marqueeItems = [
-  // ---------- INTERIOR SERVICES ----------
-  { icon: <FaCouch className="text-base text-[#D4A857]" />, text: "Luxury Interior Designing" },
-  { icon: <FaPalette className="text-base text-[#F5E5CC]" />, text: "Color & Material Consultation" },
-  { icon: <FaDraftingCompass className="text-base text-[#B8A58A]" />, text: "Space Planning & 3D Layouts" },
-  { icon: <FaHome className="text-base text-[#D4A857]" />, text: "Modular Kitchen & Wardrobes" },
-  { icon: <FaDoorOpen className="text-base text-[#C5A46D]" />, text: "Custom Furniture Manufacturing" },
-  { icon: <FaPaintBrush className="text-base text-[#F5E5CC]" />, text: "Premium Wall Finishes" },
-  { icon: <FaLeaf className="text-base text-[#D4A857]" />, text: "Eco-Friendly Interior Solutions" },
-  { icon: <FaBath className="text-base text-[#B8A58A]" />, text: "Luxury Bathroom Interiors" },
-  { icon: <FaRulerCombined className="text-base text-[#F5E5CC]" />, text: "Precision Measurements" },
-  { icon: <FaLayerGroup className="text-base text-[#D4A857]" />, text: "False Ceiling & Lighting Design" },
+  // ------------- MAIN SERVICES -------------
+  { icon: <FaTools className="text-base text-[#D4A857]" />, text: "Maintenance & AMC" },
+  { icon: <FaTruckLoading className="text-base text-[#F5E5CC]" />, text: "Freight Elevators" },
+  { icon: <FaClinicMedical className="text-base text-[#D4A857]" />, text: "Hospital Elevators" },
+  { icon: <FaBuilding className="text-base text-[#F5E5CC]" />, text: "Commercial Elevators" },
+  { icon: <FaHome className="text-base text-[#D4A857]" />, text: "Residential Elevators" },
+  { icon: <FaArrowUp className="text-base text-[#F5E5CC]" />, text: "Private Villa Elevators" },
+  { icon: <FaExchangeAlt className="text-base text-[#D4A857]" />, text: "Modernization & Upgradation" },
+  { icon: <FaWalking className="text-base text-[#F5E5CC]" />, text: "Escalators & Moving Walkways" },
 
-  // ---------- CONSTRUCTION SERVICES ----------
-  { icon: <FaHammer className="text-base text-[#D4A857]" />, text: "Residential Construction" },
-  { icon: <FaBuilding className="text-base text-[#F5E5CC]" />, text: "Commercial Building Development" },
-  { icon: <FaHardHat className="text-base text-[#C5A46D]" />, text: "Turnkey Construction Services" },
-  { icon: <FaTools className="text-base text-[#D4A857]" />, text: "Renovation & Remodeling" },
-  { icon: <FaCity className="text-base text-[#F5E5CC]" />, text: "Urban Structure Design" },
-  { icon: <FaMountain className="text-base text-[#C5A46D]" />, text: "Exterior & Façade Construction" },
-  { icon: <FaWarehouse className="text-base text-[#D4A857]" />, text: "Industrial Construction" },
-  { icon: <FaCubes className="text-base text-[#F5E5CC]" />, text: "Structural Engineering" },
-  { icon: <FaPencilRuler className="text-base text-[#D4A857]" />, text: "Architectural Planning" },
-  { icon: <FaLayerGroup className="text-base text-[#C5A46D]" />, text: "Site Development & Layout" },
+  // ------------- PRODUCTS (SPARE PARTS) -------------
+  { icon: <FaFan className="text-base text-[#D4A857]" />, text: "Fan" },
+  { icon: <FaStream className="text-base text-[#F5E5CC]" />, text: "RCR" },
+  { icon: <FaBox className="text-base text-[#D4A857]" />, text: "Truff" },
+  { icon: <FaCogs className="text-base text-[#F5E5CC]" />, text: "Drive" },
+  { icon: <FaIndustry className="text-base text-[#D4A857]" />, text: "Blower" },
+  { icon: <FaMicrochip className="text-base text-[#F5E5CC]" />, text: "Sensor" },
+  { icon: <FaThLarge className="text-base text-[#D4A857]" />, text: "LOP / COP" },
+  { icon: <FaLock className="text-base text-[#F5E5CC]" />, text: "OSG Switch" },
+  { icon: <FaSitemap className="text-base text-[#D4A857]" />, text: "ARD System" },
+  { icon: <FaPuzzlePiece className="text-base text-[#F5E5CC]" />, text: "Pencil Reed" },
+  { icon: <FaBox className="text-base text-[#D4A857]" />, text: "Junction Box" },
+  { icon: <FaCodeBranch className="text-base text-[#F5E5CC]" />, text: "Limit Switch" },
+  { icon: <FaStream className="text-base text-[#D4A857]" />, text: "Cable Hanger" },
+  { icon: <FaWaveSquare className="text-base text-[#F5E5CC]" />, text: "Display Cable" },
+  { icon: <FaPlug className="text-base text-[#D4A857]" />, text: "Control Panel" },
+  { icon: <FaLock className="text-base text-[#F5E5CC]" />, text: "Excel Gate Lock" },
+  { icon: <FaTools className="text-base text-[#D4A857]" />, text: "Maintenance Box" },
+  { icon: <FaCogs className="text-base text-[#F5E5CC]" />, text: "Travelling Cable" },
+  { icon: <FaLock className="text-base text-[#D4A857]" />, text: "OTIS Type Gate Lock" },
+  { icon: <FaBox className="text-base text-[#F5E5CC]" />, text: "Complete Electrical Kit" },
+  { icon: <FaStream className="text-base text-[#D4A857]" />, text: "Wire Bundle 0.5mm / 2.5mm / 4mm" },
 ];
 
 const PremiumMarquee = () => {
   return (
-    <div className="w-full h-[38px] overflow-hidden bg-[#1C1C1C] text-[#F5E5CC] relative flex items-center">
-      {/* Inline keyframes */}
+    <div className="w-full h-[42px] overflow-hidden bg-[#0D0D0D] text-[#F5E5CC] relative flex items-center border-y border-[#2A2A2A]">
+      {/* Keyframes */}
       <style>
         {`
-          @keyframes marquee {
+          @keyframes marqueeSlide {
             0% { transform: translateX(0%); }
             100% { transform: translateX(-50%); }
           }
-          .marquee {
+          .marquee-track {
             display: flex;
             width: max-content;
-            animation: marquee 60s linear infinite;
+            animation: marqueeSlide 55s linear infinite;
           }
         `}
       </style>
 
       <div className="relative flex items-center">
-        <div className="marquee">
+        <div className="marquee-track">
           {marqueeItems.concat(marqueeItems).map((item, idx) => (
             <div
               key={idx}
-              className="flex items-center gap-2 mx-8 text-sm font-light tracking-wide hover:scale-105 transition-transform duration-300 whitespace-nowrap"
+              className="flex items-center gap-2 mx-8 text-[15px] font-light tracking-wide hover:scale-110 transition-all duration-300 whitespace-nowrap select-none"
             >
-              <span>{item.icon}</span>
+              {item.icon}
               <span>{item.text}</span>
             </div>
           ))}
         </div>
       </div>
 
-      {/* Gradient fade edges */}
-      <div className="absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-[#1C1C1C] to-transparent pointer-events-none"></div>
-      <div className="absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-[#1C1C1C] to-transparent pointer-events-none"></div>
+      {/* Gradient edges */}
+      <div className="absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-[#0D0D0D] to-transparent pointer-events-none"></div>
+      <div className="absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-[#0D0D0D] to-transparent pointer-events-none"></div>
     </div>
   );
 };

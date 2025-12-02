@@ -1,6 +1,12 @@
-// src/data/ServiceData.js
+import sample from "../assets/hero/residentialelv.jpeg";
+import commercial from "../assets/hero/commercial.jpg";
+import hospital from "../assets/hero/hospitalelev.jpeg";
+import fright from "../assets/hero/friegtelev.jpeg";
+import villa from "../assets/hero/villaelev.jpeg";
+import service from "../assets/hero/liftservice.jpeg";
+import escal from "../assets/hero/main4.jpg"
+import modern from "../assets/hero/in6.jpeg"
 
-import sample from "../assets/hero/main.jpg";
 
 const ServiceData = {
   "residential-elevators": {
@@ -56,14 +62,13 @@ const ServiceData = {
       },
     ],
   },
-
   "commercial-elevators": {
     title: "Commercial Elevators",
     slug: "commercial-elevators",
     subtitle:
       "High-performance elevators engineered for heavy traffic, business environments, and demanding commercial spaces.",
     subHeading: "Performance Meets Precision",
-    image: sample,
+    image: commercial,
 
     description:
       "Our Commercial Elevators are built for malls, offices, IT parks, and high-rise buildings that demand speed, durability, and reliability. Featuring load-balancing motors, robust engineering, smart control systems, and elegant commercial-grade interiors, these elevators deliver consistent performance throughout the day. Designed to handle heavy footfall, they minimize downtime while maximizing efficiency. With intelligent door sensors, digital panels, and energy-saving operation, our elevators create a professional, modern, and safe mobility experience for businesses of all sizes.",
@@ -110,18 +115,15 @@ const ServiceData = {
       },
     ],
   },
-
   "hospital-elevators": {
     title: "Hospital Elevators",
     slug: "hospital-elevators",
     subtitle:
       "Safe, hygienic, and smooth elevators designed for patient care, emergencies, and medical precision.",
     subHeading: "Safe Mobility for Healthcare",
-    image: sample,
-
+    image: hospital,
     description:
       "Our Hospital Elevators are engineered for medical-grade performance. They provide stretcher-friendly space, jerk-free movement, antimicrobial interiors, and reliable emergency controls. These elevators support patient transfers, medical equipment transport, and rapid emergency response. With soft acceleration technology, wide doors, and noise-free travel, they ensure a calm and stable experience. Built with advanced sanitation-friendly materials and 24/7 reliability, these elevators are trusted by hospitals, clinics, labs, and multi-speciality care centers.",
-
     howWeWork: [
       "Healthcare-grade mobility planning.",
       "Designing stretcher-compatible cabin layouts.",
@@ -164,18 +166,15 @@ const ServiceData = {
       },
     ],
   },
-
   "freight-elevators": {
     title: "Freight Elevators",
     slug: "freight-elevators",
     subtitle:
       "Heavy-duty elevators built for warehouses, factories, and logistics centers to lift goods safely and efficiently.",
     subHeading: "Strength Beyond Limits",
-    image: sample,
-
+    image: fright,
     description:
       "Our Freight Elevators are engineered for extreme load handling with rugged steel cabins, shock-resistant structures, and industrial-grade motors. Perfect for warehouses, manufacturing units, and storage facilities, these elevators ensure safe movement of pallets, equipment, and heavy goods with zero vibration. Built for long-term reliability, they operate with minimal maintenance even in demanding industrial conditions. Their robust engineering ensures strength, stability, and durability even under harsh working cycles.",
-
     howWeWork: [
       "Load capacity analysis and requirement study.",
       "Industrial-grade design planning.",
@@ -218,14 +217,13 @@ const ServiceData = {
       },
     ],
   },
-
   "private-villa-elevator": {
     title: "Private Villa Elevator",
     slug: "private-villa-elevator",
     subtitle:
       "Premium home elevators for luxury villas with designer interiors, panoramic options, and ultra-silent movement.",
     subHeading: "Elegance Tailored for You",
-    image: sample,
+    image: villa,
 
     description:
       "Our Private Villa Elevators redefine luxury with panoramic glass cabins, designer lighting, and premium finishes crafted to match your villa’s architecture. They offer whisper-quiet movement, smooth travel, and elegant interiors that enhance the ambiance of your home. Whether installed indoors or outdoors with a glass shaft, these elevators elevate comfort and aesthetics to world-class standards. Built with safety technologies, high-efficiency drives, and customizable themes, they blend seamlessly into lifestyle homes that demand refinement.",
@@ -272,14 +270,13 @@ const ServiceData = {
       },
     ],
   },
-
   "maintenance-amc": {
     title: "Maintenance & AMC",
     slug: "maintenance-amc",
     subtitle:
       "Complete elevator care plans to ensure long-lasting, safe, and smooth performance.",
     subHeading: "Reliable Care, Anytime",
-    image: sample,
+    image: service,
 
     description:
       "Our Maintenance & AMC services ensure that your elevator remains safe, efficient, and reliable throughout its lifespan. With rigorous safety checks, lubrication routines, system diagnostics, emergency readiness, and genuine spare parts, we deliver uninterrupted elevator performance. Our trained engineers inspect every component to prevent breakdowns and maximize safety. With customizable AMC plans for residential, commercial, and industrial lifts, we ensure peace of mind with 24/7 availability and fast response support.",
@@ -326,14 +323,13 @@ const ServiceData = {
       },
     ],
   },
-
   "escalators-walkways": {
     title: "Escalators & Moving Walkways",
     slug: "escalators-walkways",
     subtitle:
       "High-efficiency escalators and walkways for commercial hubs with superior performance and reliability.",
     subHeading: "Smooth Traffic Movement",
-    image: sample,
+    image: escal,
 
     description:
       "Our Escalators and Moving Walkways are engineered for malls, airports, metros, and commercial centers where continuous foot traffic demands long-lasting performance. Built with intelligent safety systems, anti-slip steps, weather-resistant components, and silent operation, they ensure smooth pedestrian flow throughout the day. Their sleek design complements architectural spaces while the energy-efficient motors minimize operating costs. Designed for both indoor and outdoor environments, these systems deliver stability, comfort, and safety at every step.",
@@ -380,14 +376,13 @@ const ServiceData = {
       },
     ],
   },
-
   "modernization-upgradation": {
     title: "Modernization & Upgradation",
     slug: "modernization-upgradation",
     subtitle:
       "Transform outdated elevators into modern systems with improved safety, performance, and aesthetics.",
     subHeading: "Transforming the Old to New",
-    image: sample,
+    image: modern,
 
     description:
       "Our Modernization & Upgradation services breathe new life into old elevators by integrating modern technology, stylish interiors, and advanced safety systems. We upgrade motors, controllers, door mechanisms, lighting, and cabin materials to enhance performance and extend the elevator’s lifespan. Whether you want to improve energy efficiency, ride comfort, safety standards, or cabin appearance, our upgrade solutions ensure a brand-new experience without replacing the entire system.",
